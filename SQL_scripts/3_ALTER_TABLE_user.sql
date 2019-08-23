@@ -1,0 +1,4 @@
+ALTER TABLE `user`
+ADD CONSTRAINT `FK_course`
+FOREIGN KEY (`course`) REFERENCES `course` (`id`)
+ON UPDATE CASCADE;
