@@ -6,10 +6,10 @@ This data is available for download as CSV files from here.
 - Upcoming service offerings 
 
 1. Advanced 13F Analysis and Statistics for -
-a/ SANDLER CAPITAL MANAGEMENT
-b/ BLUESPRUCE INVESTMENTS
-c/ OAKTREE CAPITAL MANAGEMENT
-d/ AISLING CAPITAL MANAGEMENT
+- SANDLER CAPITAL MANAGEMENT
+- BLUESPRUCE INVESTMENTS
+- OAKTREE CAPITAL MANAGEMENT
+- AISLING CAPITAL MANAGEMENT
 
 ### NASDAQ Ticker Data Repository
 
