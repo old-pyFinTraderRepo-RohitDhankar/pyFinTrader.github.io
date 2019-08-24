@@ -139,3 +139,38 @@ plt.title(' 20 Days Bollinger Bands for IBM')
 plt.ylabel('Price (USD)')
 plt.show()
 
+# Shading the space between BB
+plt.style.use('fivethirtyeight')
+fig = plt.figure(figsize=(12,6))
+ax = fig.add_subplot(111)
+# Get index values for the X axis for IBM DataFrame
+x_axis = df_ibm.index.get_level_values(0)
+# Plot shaded 20 Day Bollinger Band for IBM
+ax.fill_between(x_axis, df_ibm['UpperBB'], df_ibm['LowerBB'], color='grey')
+# Plot Adjust Closing Price and Moving Averages
+ax.plot(x_axis, df_ibm['close'], color='blue', lw=2)
+ax.plot(x_axis, df_ibm['30Day_Mov.avg'], color='black', lw=2)
+# Set Title & Show the Image
+ax.set_title('30 Days Bollinger Bands for IBM ')
+ax.set_xlabel('Date (Year/Month)')
+ax.set_ylabel('Price(USD)')
+ax.legend()
+plt.show()
+#
+# Shading the space between BB
+plt.style.use('fivethirtyeight')
+fig = plt.figure(figsize=(12,6))
+ax = fig.add_subplot(111)
+# Get index values for the X axis for IBM DataFrame
+x_axis = df_aapl.index.get_level_values(0)
+# Plot shaded 20 Day Bollinger Band for IBM
+ax.fill_between(x_axis, df_aapl['UpperBB'], df_aapl['LowerBB'], color='pink')
+# Plot Adjust Closing Price and Moving Averages
+ax.plot(x_axis, df_aapl['close'], color='blue', lw=2)
+ax.plot(x_axis, df_aapl['30Day_Mov.avg'], color='black', lw=2)
+# Set Title & Show the Image
+ax.set_title('30 Days Bollinger Bands for AAPL - APPLE Inc. ')
+ax.set_xlabel('Date (Year/Month)')
+ax.set_ylabel('Price(USD)')
+ax.legend()
+plt.show()
